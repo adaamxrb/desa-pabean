@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Urbanist:wght@100&display=swap');
+
+:root {
+	--color-bg-1: #ffffff;
+	--color-bg-2: #f5f5f5;
+	--color-brand: #ffba00;
+	--color-brand-light: #ffc628;
+	--color-body: #a7a7a7;
+	--color-border: rgba(255, 255, 255, 0.1);
+	--color-heading: #000;
+	--font-main: 'Plus Jakarta Sans';
+	--border-radius: 32px;
+}
+
+body {
+	background-color: var(--color-bg-1);
+	color: var(--color-body);
+	font-family: var(--font-main);
+	line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: 700;
+	color: var(--color-heading);
+}
+
+a {
+	transiton: all 0.4s ease;
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--color-brand);
+}
+
+img {
+	width: 100%;
+}
+
+section {
+	padding-top: 120px;
+	padding-bottom: 120px;
+}
+
+.navbar {
+	background-color: var(--color-bg-1);
+}
+
+.btn {
+	padding: 12px 24px;
+}
+
+.btn-brand {
+	background-color: var(--color-brand);
+	color: var(--color-bg-1);
+	font-weight: 700;
+	border-radius: 100px;
+}
+
+.btn-brand:hover {
+	background-color: var(--color-brand-light);
+	border-color: var(--color-brand-light);
+	color: var(--color-bg-1);
+}
+
+/* Heading Section */
+
+#heading h1 {
+	font-weight: 800;
+}
+
+#heading p {
+	max-width: 600px;
+	margin: 24px auto;
+}
+
+.bg-image {
+	min-height: 450px;
+	background-image: url(../images/cover.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+/* Sejarah Section */
+.section-title {
+	margin-bottom: 40px;
+}
+
+.section-title h6 {
+	background-color: var(--color-brand);
+	padding: 8px 16px;
+	border-radius: 100px;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+.section-title p {
+	max-width: 900px;
+}
+
+.pimpinan {
+	border-radius: var(--border-radius);
+	background-color: var(--color-bg-2);
+}
+
+.pimpinan p {
+	font-size: 18px;
+}
+
+.aktif {
+	background-color: var(--color-brand-light);
+	color: var(--color-bg-1);
+}
+
+.aktif h5 {
+	color: white;
+}
+
+.icon-box {
+	width: 80px;
+	height: 74px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font: 34px;
+	color: white;
+}
+
+.icon-box h6 {
+	color: white;
+	border-radius: 100px;
+}
+
+.icon-box.sm {
+	width: 100px;
+	height: 32px;
+	font-size: 24px;
+}
+
+/* Kondisi umum */
+.ku-list {
+	padding: 0;
+	list-style: none;
+}
