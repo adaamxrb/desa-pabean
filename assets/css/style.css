@@ -32,6 +32,7 @@ h6 {
 a {
 	transiton: all 0.4s ease;
 	text-decoration: none;
+	color: var(--color-body);
 }
 
 a:hover {
@@ -148,4 +149,87 @@ section {
 .ku-list {
 	padding: 0;
 	list-style: none;
+}
+
+.videowrapper {
+	position: relative;
+	width: 100%;
+	height: 0;
+	padding-bottom: 56.25%;
+	margin: auto;
+}
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20%;
+	height: 20%;
+}
+
+/* Struktur */
+.anggota {
+	position: relative;
+}
+
+.anggota img {
+	max-width: 180px;
+	height: 180px;
+}
+
+.anggota::before {
+	content: '';
+	width: 100%;
+	height: calc(100% - 90px);
+	background-color: var(--color-bg-2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: -1;
+	border-radius: var(--border-radius);
+}
+
+/* Visi Misi */
+#visimisi {
+	background-image: url(../images/cover.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.visimisi-carousel {
+	max-width: 700px;
+	background-color: var(--color-bg-1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	margin: auto;
+	width: 40px;
+}
+
+.carousel-control-next {
+	border-left: 1px solid var(--color-border);
+}
+.carousel-control-prev {
+	border-right: 1px solid var(--color-border);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	background-color: var(--color-brand);
+}
+
+/* blog */
+.blog-post {
+	border-radius: var(--border-radius);
+	background-color: var(--color-bg-2);
+}
+
+.blog-post img {
+	border-top-left-radius: var(--border-radius);
+	border-top-right-radius: var(--border-radius);
+}
+
+.blog-post .title {
+	line-height: 1.4;
 }
