@@ -30,7 +30,7 @@ h6 {
 }
 
 a {
-	transiton: all 0.4s ease;
+	transition: all 0.4s ease;
 	text-decoration: none;
 	color: var(--color-body);
 }
@@ -103,6 +103,20 @@ section {
 	background-size: cover;
 	background-attachment: fixed;
 }
+.bg-image-wisata {
+	min-height: 450px;
+	background-image: url(../images/footer.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
+.bg-image-footer {
+	min-height: 450px;
+	background-image: url(../images/footer.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+}
 
 /* Sejarah Section */
 .section-title {
@@ -167,20 +181,24 @@ section {
 	list-style: none;
 }
 
-.videowrapper {
+.video-container {
 	position: relative;
-	width: 100%;
-	height: 0;
 	padding-bottom: 56.25%;
+	padding-top: 30px;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	align-items: center;
 }
-.videowrapper iframe {
+.video-container iframe,
+.video-container object,
+.video-container embed {
 	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
 	height: 100%;
 }
-
 /* Struktur */
 .anggota {
 	position: relative;
@@ -225,7 +243,7 @@ section {
 
 /* Visi Misi */
 #visimisi {
-	background-image: url(../images/cover.jpg);
+	background-image: url(../images/visi.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -291,4 +309,18 @@ footer .footer-top {
 footer .footer-bot {
 	padding-top: 30px;
 	padding-bottom: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+	.footer-top {
+		display: flex;
+		justify-content: center;
+		text-align: center;
+		/* align-items: center; */
+		/* height: 500px; Sesuaikan dengan tinggi footer Anda */
+	}
+	.footer-bot {
+		text-align: center;
+		font-size: 110%;
+	}
 }
