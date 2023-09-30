@@ -340,7 +340,7 @@ footer .footer-bot {
 	filter: grayscale(0) brightness(1);
 }
 
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 600px) {
 	.footer-top {
 		display: flex;
 		justify-content: center;
