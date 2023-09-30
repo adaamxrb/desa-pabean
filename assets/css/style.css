@@ -105,7 +105,7 @@ section {
 }
 .bg-image-wisata {
 	min-height: 450px;
-	background-image: url(../images/footer.jpg);
+	background-image: url(../images/wisata/pantai-tonggu.jpg);
 	background-position: center;
 	background-size: cover;
 	background-attachment: fixed;
@@ -311,16 +311,57 @@ footer .footer-bot {
 	padding-bottom: 30px;
 }
 
-@media only screen and (max-width: 600px) {
+/* Wisata */
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.row .column {
+	flex: 33.3%;
+	width: auto;
+	height: 100%;
+	overflow: hidden;
+	padding: 0 4px;
+}
+
+.row .column img {
+	margin-top: 2%;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	filter: grayscale(1) brightness(0.5);
+	border-radius: 5px;
+	transition: 0.2s linear;
+}
+
+.row .column img:hover {
+	filter: grayscale(0) brightness(1);
+}
+
+@media only screen and (max-width: 680px) {
 	.footer-top {
 		display: flex;
 		justify-content: center;
 		text-align: center;
-		/* align-items: center; */
-		/* height: 500px; Sesuaikan dengan tinggi footer Anda */
 	}
 	.footer-bot {
 		text-align: center;
 		font-size: 110%;
+	}
+	/* wisata */
+	.row .column {
+		flex: 100%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	/* wisata */
+	.row .column {
+		flex: 50%;
+	}
+	.row .column img {
+		filter: grayscale(0) brightness(1);
 	}
 }
